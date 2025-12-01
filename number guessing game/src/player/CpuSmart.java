@@ -27,7 +27,7 @@ public class CpuSmart extends CpuPlayer {
 		if(cpuGuess < secretNumber) {
 			min = Math.max(min, cpuGuess + 1);
 		} else {
-			max = Math.max(max, cpuGuess - 1);
+			max = Math.min(max, cpuGuess - 1);
 		}
 		
 		if(min > max) {
@@ -41,7 +41,7 @@ public class CpuSmart extends CpuPlayer {
 		if(playerGuess < secretNumber) {
 			min = Math.max(min, playerGuess + 1);
 		} else {
-			max = Math.max(max, playerGuess - 1);
+			max = Math.min(max, playerGuess - 1);
 		}
 		
 		if(min > max) {
