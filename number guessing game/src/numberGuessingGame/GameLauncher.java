@@ -39,7 +39,6 @@ public class GameLauncher {
 		
 		while(true) {
 			
-			//System.out.println("入力");
 			String input = scanner.nextLine().trim();
 			
 			try {
